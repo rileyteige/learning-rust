@@ -7,5 +7,5 @@ fn main() {
 
 #[test]
 fn is_one_equal_to_one() {
-	assert_eq!(1i, 1i);
+    assert_eq!(1i, 1i);
 }
