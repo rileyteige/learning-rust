@@ -17,17 +17,17 @@ fn main() {
     // Allocate a variable on the heap. Will automatically be freed.
     let mut x3 = box 5i;
 
-	assert_eq!(5i, *x3);
+    assert_eq!(5i, *x3);
 
-	rc_and_arc();
+    rc_and_arc();
 }
 
 fn add_one(x: &int) -> int { *x + 1 }
 
 fn rc_and_arc() {
-	let x = Rc::new(5i);
+    let x = Rc::new(5i);
 
-	// How to use Arc<T>?
+    // How to use Arc<T>?
 
-	assert_eq!(5i, *x);
+    assert_eq!(5i, *x);
 }
